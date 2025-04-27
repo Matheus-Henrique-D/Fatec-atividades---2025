@@ -1,0 +1,6 @@
+'''exercício 10'''
+
+nome= input("Digite seu nome:")
+evento= input("E o evento na qual quer ir:")
+
+print(f"Olá, {nome}! Você está convidado(a) para a {evento}. Esperamos por você!")
