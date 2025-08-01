@@ -16,6 +16,9 @@ As pastas principais incluem:
 - `aula 5`
 - `Aula 6`
 - `aula 7`
+- `aula 8`
+- `aula 12`
+- `Revisão`
 - `python principal` (contém diversos exercícios e testes iniciais)
 
 ## 💻 Tecnologias Utilizadas
