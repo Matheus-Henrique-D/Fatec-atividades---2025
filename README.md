@@ -1,34 +1,93 @@
-# Repositório de Atividades de Python - Fatec
+# YouTube para MP3 Downloader
 
-Bem-vindo ao meu repositório de atividades da faculdade!
+Um programa simples em Python para baixar vídeos do YouTube e convertê-los para formato MP3.
 
-Este espaço é dedicado a armazenar e documentar os exercícios de programação em Python desenvolvidos durante as aulas na Fatec. O objetivo é registrar meu progresso, consolidar o aprendizado e criar um portfólio com os projetos e desafios concluídos ao longo do curso.
+## 📋 Pré-requisitos
 
-## 📂 Estrutura do Repositório
+1. **Python 3.7+** instalado
+2. **FFmpeg** instalado no sistema
+3. **Biblioteca yt-dlp**
 
-O repositório está organizado em pastas, onde cada uma geralmente corresponde a um tópico ou a uma aula específica. Dentro de cada pasta, você encontrará:
+## 🚀 Instalação
 
--   📜 **Scripts Python (`.py`):** Soluções para os exercícios propostos, nomeados de forma sequencial (ex: `ex_1.py`, `ex_14.py`).
--   📓 **Notebooks Jupyter (`.ipynb`):** Análises e exercícios mais interativos.
--   📄 **Documentos (`.pdf`):** Listas de exercícios e materiais de apoio fornecidos em aula.
+### 1. Instalar dependências Python
+```bash
+pip install -r requirements.txt
+```
 
-As pastas principais incluem:
-- `aula 5`
-- `Aula 6`
-- `aula 7`
-- `python principal` (contém diversos exercícios e testes iniciais)
+### 2. Instalar FFmpeg
 
-## 💻 Tecnologias Utilizadas
+#### Windows:
+- Baixe o FFmpeg de: https://ffmpeg.org/download.html
+- Extraia os arquivos
+- Adicione a pasta `bin` ao PATH do sistema
 
-A principal tecnologia utilizada neste repositório é:
+#### macOS:
+```bash
+brew install ffmpeg
+```
 
--   **Linguagem:** Python 3
+#### Linux (Ubuntu/Debian):
+```bash
+sudo apt update
+sudo apt install ffmpeg
+```
 
-## 🚀 Como Navegar
+## 💻 Como usar
 
-Para encontrar um exercício específico, navegue até a pasta da aula correspondente. Os arquivos de código são nomeados de acordo com o número do exercício para facilitar a busca.
+1. Execute o programa:
+```bash
+python mp3.py
+```
 
-## 👨‍💻 Autor
+2. Escolha a opção "1" para baixar um vídeo
 
--   **Matheus Henrique D.**
--   **GitHub:** [Matheus-Henrique-D](https://github.com/Matheus-Henrique-D)
+3. Cole a URL do vídeo do YouTube
+
+4. O arquivo MP3 será salvo na pasta `downloads/`
+
+## ✨ Funcionalidades
+
+- ✅ Download de vídeos únicos
+- ✅ Conversão automática para MP3
+- ✅ Qualidade de áudio configurável (192kbps)
+- ✅ Interface simples e intuitiva
+- ✅ Criação automática da pasta de downloads
+
+## 🔧 Configurações
+
+O programa usa as seguintes configurações padrão:
+- Formato de áudio: Melhor qualidade disponível
+- Formato de saída: MP3
+- Qualidade: 192kbps
+- Pasta de destino: `downloads/`
+
+## 📁 Estrutura de arquivos
+
+```
+├── mp3.py          # Programa principal
+├── requirements.txt # Dependências Python
+├── README.md       # Este arquivo
+└── downloads/      # Pasta onde os MP3s são salvos
+```
+
+## ⚠️ Observações importantes
+
+- Respeite os direitos autorais dos vídeos
+- Use apenas para conteúdo que você tem permissão para baixar
+- O programa requer conexão com a internet
+- Alguns vídeos podem ter restrições de download
+
+## 🐛 Solução de problemas
+
+### Erro: "FFmpeg não encontrado"
+- Instale o FFmpeg seguindo as instruções acima
+- Verifique se está no PATH do sistema
+
+### Erro: "yt-dlp não instalado"
+- Execute: `pip install yt-dlp`
+
+### Download falha
+- Verifique se a URL do YouTube é válida
+- Teste sua conexão com a internet
+- Alguns vídeos podem ter restrições de download
